@@ -2,11 +2,14 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Metadata\ApiResource;
 use App\Repository\BoxeurRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: BoxeurRepository::class)]
+#[ApiResource()]
 class Boxeur
+
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]

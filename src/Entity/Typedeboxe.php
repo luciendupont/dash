@@ -2,10 +2,12 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Metadata\ApiResource;
 use App\Repository\TypedeboxeRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: TypedeboxeRepository::class)]
+#[ApiResource()]
 class Typedeboxe
 {
     #[ORM\Id]
